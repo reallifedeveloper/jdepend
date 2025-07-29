@@ -9,6 +9,8 @@ permissions:
 jobs:
   release:
     uses: reallifedeveloper/github-workflows/.github/workflows/maven-release.yaml@main
+    with:
+      main-branch: master
     secrets: inherit
     permissions:
       contents: write
